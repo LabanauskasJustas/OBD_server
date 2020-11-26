@@ -1,0 +1,9 @@
+version: '2'
+services:
+    php:
+        volumes:
+            - bigcake:/var/www/symfony
+            - ./logs/symfony:/var/www/symfony/var/logs
+volumes:
+  bigcake:
+    external: true
